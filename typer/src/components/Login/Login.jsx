@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "../Register/Register.module.css";
-function Register() {
+import styles from "../Login/Login.module.css";
+import { NavLink } from "react-router-dom";
+function Login() {
   return (
     <>
       <div className={styles.container}>
@@ -13,11 +14,15 @@ function Register() {
             <input type="password" name="haslo" placeholder="Hasło" required />
           </div>
           <div className={styles.form_container}>
-            <button type="submit">Zaloguj się</button>
+            <button type="submit" className={styles.button}>
+              Zaloguj się
+            </button>
           </div>
           <div className={styles.footer}>
             <span className={styles.span}>Nie masz jeszcze konta?</span> <br />
-            <button>Zarejestruj się</button>
+            <NavLink to={"/register"}>
+              <button className={styles.button}>Zarejestruj się</button>
+            </NavLink>
           </div>
         </form>
       </div>
@@ -25,4 +30,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;

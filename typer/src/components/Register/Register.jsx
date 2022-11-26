@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../Register/Register.module.css";
+import { NavLink } from "react-router-dom";
 function Register() {
   return (
     <>
@@ -32,7 +33,9 @@ function Register() {
           </div>
           <div className={styles.footer}>
             <span className={styles.span}>Masz już konto?</span> <br />
-            <button>Zaloguj się</button>
+            <NavLink to={"/"}>
+              <button>Zaloguj się</button>
+            </NavLink>
           </div>
         </form>
       </div>

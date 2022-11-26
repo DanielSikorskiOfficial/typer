@@ -62,6 +62,8 @@ button {
   font-weight: 600;
   font-family: "Lato";
   cursor: pointer;
+  width: 250px;
+  text-align: center;
 }
 
 .span {

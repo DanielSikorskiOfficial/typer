@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "../Login/Login.module.css";
+import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
 function Login() {
   return (
     <>
       <div className={styles.container}>
         <h2 className={styles.header}>Zaloguj się</h2>
-        <form>
+        <form  method="POST">
           <div className={styles.input}>
             <input type="text" name="login" placeholder="Login" required />
           </div>

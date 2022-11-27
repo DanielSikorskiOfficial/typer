@@ -6,7 +6,7 @@ function Register() {
     <>
       <div className={styles.container}>
         <h2 className={styles.header}>Zarejestruj się</h2>
-        <form>
+        <form method="POST">
           <div className={styles.input}>
             <input type="text" name="imie" placeholder="Imię" required />
           </div>
